@@ -1,0 +1,5 @@
+<ProductSupplement VERSION="0.1">
+ <ProductName VALUE="Valid Test Product"/>
+ <InstallTypes VALUE="Content"/>
+ <ProductTags VALUE="DAZStudio4_5"/>
+</ProductSupplement>

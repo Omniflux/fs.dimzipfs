@@ -1,0 +1,1 @@
+from .dimzipfs import DIMZipFS as DIMZipFS

@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "fs.dimzipfs"
+packages = [{ include = "fs", from = "src"}]
+version = "0.1.0"
+description = "Pyfilesystem2 implementation for DAZ Install Manager Packages"
+license = "MIT"
+authors = ["Omni Flux <omniflux@omniflux.com>"]
+readme = "README.rst"
+repository = "https://github.com/Omniflux/fs.dimzipfs"
+keywords = ["filesystem", "Pyfilesystem2"]
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: Developers",
+	"Operating System :: OS Independent",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+	"Topic :: System :: Filesystems"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+lxml = "^4.9.2"
+fs = "^2.4.16"
+
+[tool.poetry.group.dev.dependencies]
+types-lxml = "^2023.2.11"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."fs.opener"]
+"dimzip" = "fs.dimzipfs.opener:DIMZipOpener"

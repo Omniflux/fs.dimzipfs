@@ -1,0 +1,5 @@
+<DAZInstallManifest VERSION="0.1">
+ <GlobalID VALUE="b29b5e8e-34d1-4ebe-a7c2-9859117bb0e1"/>
+ <File TARGET="Temp" ACTION="Install" PLATFORM="PC" BITARCH="32" VALUE="Temp_(32-Bit)/temp.txt"/>
+ <File TARGET="Temp" ACTION="Install" PLATFORM="PC" BITARCH="64" VALUE="Temp_(64-Bit)/temp.txt"/>
+</DAZInstallManifest>
