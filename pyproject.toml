@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "fs.dimzipfs"
 packages = [{ include = "fs", from = "src"}]
-version = "0.1.0"
+version = "0.1.1"
 description = "Pyfilesystem2 implementation for DAZ Install Manager Packages"
 license = "MIT"
 authors = ["Omni Flux <omniflux@omniflux.com>"]
