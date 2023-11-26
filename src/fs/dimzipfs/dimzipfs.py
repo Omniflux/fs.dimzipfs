@@ -67,7 +67,8 @@ class DIMZipFS(FS):
 		return f"<{self.__class__.__name__.lower()} {self._file!r}>"
 
 	def close(self) -> None:
-		self._zipFS.close()
+		if hasattr(self, '_zipFS'):
+			self._zipFS.close()
 		self._manifestfs.close()
 		super().close()
 
